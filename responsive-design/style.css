@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+header h1 {
+  color: rgb(242,138, 40);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  margin: 10px 0;
+}
+header h2 {
+  display: none;
+}
+header h3 {
+  display: none;
+}
+nav ul {
+  height: 46px;
+  background: rgb(241, 241, 241);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+nav ul li:not(:last-child) {
+    display: none;
+}
+nav ul li img {
+    width: 60px;
+    padding: 15px;
+}
+main {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .column {
+  flex-grow: 1;
+}
+main .column:nth-child(1) h4 {
+  background: rgb(126, 211, 33);
+}
+main .column:nth-child(2) h4 {
+  background: rgb(234, 91, 76);
+}
+main .column:nth-child(3) h4 {
+  background: rgb(0, 174, 255);
+}
+main .column h4 {
+  color: white;
+  font-weight: 400;
+  padding: 15px;
+}
+main .column p {
+    padding: 15px;
+}
+@media (min-width: 768px){
+  nav ul {
+    justify-content: flex-start;
+  }
+  nav ul li:not(:last-child) {
+    display: -webkit-box;
+    display: flex;
+  }
+  nav ul li:not(:last-child):hover {
+    background: yellow;
+  }
+  nav ul li img {
+    display: none;
+}
+}
+@media (min-width: 1024px) {
+  header h1 {
+    font-size: 88px;
+  }
+  header > h2 {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 23px;
+    line-height: 35px;
+    color: #FFC719;
+    background: black;
+    display: block;
+  }
+  header h3 {
+    display: block;
+  }
+  header h3 span {
+    color: #ff0044;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px;
+    font-size: 25px;
+    display: inline-block;
+  }
+}
